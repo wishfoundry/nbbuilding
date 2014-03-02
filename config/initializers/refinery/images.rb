@@ -36,10 +36,10 @@ Refinery::Images.configure do |config|
   # Configure Dragonfly
   # This is where in the middleware stack to insert the Dragonfly middleware
   # config.dragonfly_insert_before = "ActionDispatch::Callbacks"
-  # config.dragonfly_secret = "92ab73ee5b3650824bf1121fd1898cd73f7dd8d828674ff4"
+  # config.dragonfly_secret = "4a81442c83c74d65085dd0077541f334fbaa85c22dc6c037"
   # config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
   # config.dragonfly_url_host = ""
-  # config.datastore_root_path = "/Users/ben.greer/Projects/nbbuilding/public/system/refinery/images"
+  # config.datastore_root_path = "/Users/ben.greer/Projects/refinerycms3-0/public/system/refinery/images"
 
   # Configure Dragonfly custom storage backend
   # The custom_backend setting by default defers to the core setting for this but can be set just for images.
