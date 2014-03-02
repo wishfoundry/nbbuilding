@@ -1,0 +1,23 @@
+
+#editor_switch > span {
+  border:none;
+  $orange: #e7682c;
+
+  & > a {
+    color: white;
+    background: $orange ;
+    background-image: none;
+    border: none;
+
+    &:hover {
+      background-color: lighten($orange, 10%);
+      border: none;
+    }
+  }
+}
+
+
+body.admin {
+  background-image: url(image_path('metal.jpg')) ;
+  background-size: cover;
+}
