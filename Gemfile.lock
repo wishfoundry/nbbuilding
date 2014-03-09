@@ -138,6 +138,12 @@ GIT
       dragonfly-s3_data_store (~> 1.0.0)
       refinerycms-core (= 3.0.0.dev)
 
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-blocks (1.0)
+      refinerycms-core (~> 3.0.0.dev)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -460,6 +466,7 @@ DEPENDENCIES
   rb-inotify
   refinerycms!
   refinerycms-acts-as-indexed!
+  refinerycms-blocks!
   refinerycms-blog!
   refinerycms-codemirror
   refinerycms-i18n!

@@ -114,7 +114,7 @@ gem 'awesome_nested_set', github: 'collectiveidea/awesome_nested_set', branch: '
 #gem 'spreefinery_core', :git => 'git://github.com/shoponrails/spreefinery_core.git'
 #gem 'spree-refinerycms-authentication', :git => 'git://github.com/adrianmacneil/spree-refinery-authentication.git'
 
-
+gem 'refinerycms-blocks', path: 'vendor/extensions'
 #gem 'refinerycms-bricks', path: 'vendor/extensions'
 #gem 'refinerycms-blocks', path: 'vendor/extensions'
 #gem 'refinerycms-calendar', path: 'vendor/extensions'
