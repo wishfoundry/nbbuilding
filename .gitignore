@@ -73,6 +73,7 @@ nbproject
 
 # RubyMine
 .idea
+*.iml
 
 # E-texteditor
 .eprj
