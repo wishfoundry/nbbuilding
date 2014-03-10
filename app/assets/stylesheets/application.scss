@@ -8,13 +8,17 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require refinery/formatting
- *= require refinery/theme
+ * require refinery/formatting
+ * require refinery/theme
  *= require_self
- *= require foundation_and_overrides
+ * require foundation_and_overrides
 
  *= require_tree .
  */
 
+@import "refinery/formatting";
+@import "refinery/theme";
+
+@import "ng_fnd_animations.css";
 @import "foundation_and_overrides";
 /* Add imports of custom sass/scss files here */
