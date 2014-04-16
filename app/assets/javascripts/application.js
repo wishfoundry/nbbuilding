@@ -13,7 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require mm-foundation
+//= require angular
+//= require angular-sanitize
+//= require angular-route
+//= require angular-loader
+//= require angular-animate
+//= require 'mm-foundation.min'
+//= require 'timer'
 // require turbolinks
 //= require_tree .
 

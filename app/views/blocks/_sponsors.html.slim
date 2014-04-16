@@ -1,0 +1,43 @@
+scss:
+  .sponsors__block {
+    min-height: 50px;
+  }
+  .sponsors__tabs {}
+  .sponsors__panes {}
+  .sponsors__block .tabbable dl {
+    display: flex;
+    justify-content: center;
+  }
+  .tabbable .tabs dd,
+  .tabbable .tabs dd > a {
+    background: none;
+    color: white;
+  }
+  .sponsors__block .tabbable dd.active a {
+    background-color: #333 ;
+  }
+  .sponsors__block .tabs-content .content {
+    padding: 1em;
+  }
+
+
+section.block.row.full-width.collapse.sponsors__block.dark-color
+  div.site-width
+    ruby:
+      require 'json'
+      @sponsors = [
+                  {:title => "genr", :content => "content here"},
+                  { :title =>"x-treme", :content => "other content here"}
+                  ]
+
+    tabset ng-init='tabs = #{@sponsors.to_json}'
+
+      /- for tab in [{:title => "genr", :content => "content here"}, { :title => "x-treme", :content => "other content here"}] do
+      /  tab class="tabs-content tabbable"
+      /    tab-heading
+      /      | #{ tab[:title] }
+      /
+      /    | #{ tab[:content] }
+
+      tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active"
+        | {{tab.content}}

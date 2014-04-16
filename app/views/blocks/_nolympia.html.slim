@@ -1,0 +1,104 @@
+scss:
+  .olympia-spotlight {
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  .olympia-spotlight::after {
+    content: " ";
+    background: url(assets/scene3.JPG) ;
+    background-size: cover;
+    /*opacity: 0.5;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height:100%;
+    display: block;
+    position: absolute !important;
+    z-index: -1;
+    visibility: visible !important;
+  }
+  .olympia-spotlight .site-width {
+    padding-top: 4em;;
+  }
+  .olympia-spotlight__tagline {
+    color: #ffad00;
+  }
+  .olympia-spotlight__logo {
+    font-size: 180px;
+  }
+  .olympia-spotlight__logo--center {
+    /*position: relative;*/
+    /*left: 50%;*/
+    /*-webkit-transform: translateX(50%);*/
+    /*-ms-transform: translateX(50%);*/
+    /*transform: translateX(50%);*/
+    display: inline-block;
+    width: 100%;
+  }
+  .countdown__number {
+    display: inline-block;
+    font-size: 80px;
+    line-height: 120px;
+    height: 120px;
+    width: 120px;
+  }
+  .countdown__description {
+    font-size: 16px;
+    color: #ffad00;
+  }
+  .olympia-spotlight__buttons {
+    padding-top: 2em;
+    padding-bottom: 5em;
+  }
+  .olympia-spotlight__buttons .attend {
+    background-color: transparent;
+  }
+  .olympia-spotlight__buttons .register {
+    margin-left: 2em;
+  }
+  .olympia-spotlight__buttons .register,
+  .olympia-spotlight__buttons .attend{
+    box-sizing: border-box;
+    border: 2px solid #ffad00;
+    width: 200px;
+  }
+  .olympia-spotlight__buttons .register > a {
+    color: black ;
+  }
+  .button-spacer { width: 2em; display:inline-block; }
+
+section class="block row full-width collapse olympia-spotlight"
+  div class="site-width"
+    div class="olympia-spotlight__logo"
+      span class="fi-web olympia-spotlight__logo--center"
+
+    div class="olympia-spotlight__tagline"
+      span
+        | The world's largest natural bodybuilding event
+
+    div timer="" interval="1000" end-time="1420070400000" class="row countdown"
+      - for time in ['days', 'minutes', 'hours', 'seconds'] do
+        div class=" medium-3 columns"
+          div class="countdown__item"
+            span.countdown__number
+              | {{ #{time} }}
+            br
+            span.countdown__description
+              | #{ time.capitalize }
+
+
+
+
+    div class="olympia-spotlight__buttons"
+      div.button.attend
+        a href="#"
+          | Attend
+
+      div.button.register
+        a href="#"
+          | Register
+
+

@@ -1,0 +1,91 @@
+<!-- footer nav -->
+<style>
+	.footer-nav__block {}
+	.footer-nav__title {}
+	.footer-nav__item {}
+	.footer-nav__block .side-nav .footer-nav__link,
+	.footer-nav__block .side-nav .footer-nav__link:link {
+		color: black ;
+	}
+	.footer-nav__nav {}
+</style>
+<section class="block row full-width collapse footer-nav__block primary-color">
+	<div class="site-width row">
+		<div class="medium-8 columns">
+			<div class="row collapse">
+		<div class="medium-4 columns">
+			<nav class="footer-nav__nav">
+				<h4 class="footer-nav__title">Events</h4>
+				<ul class="side-nav">
+					<li class="footer-nav__item"><a class="footer-nav__link">Natural Olympia</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link">Natural Universe</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link">Team USA</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="medium-4 columns">
+			<nav class="footer-nav__nav">
+				<h4 class="footer-nav__title">Divisions</h4>
+				<ul class="side-nav">
+					<li class="footer-nav__item"><a class="footer-nav__link">Bodybuilding</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link">Bathing Suit Beauties</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link">Bikini Divas</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link">Kids &amp; Teens</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link">Ms. Fitness</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link">Ms. Figure</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link">Mr/Ms Physique</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link">View All Divisions</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="medium-4 columns">
+			<nav class="footer-nav__nav">
+				<h4 class="footer-nav__title">Organization</h4>
+				<ul class="side-nav">
+					<li class="footer-nav__item"><a class="footer-nav__link">Store</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link">General</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link">General</a></li>
+				</ul>
+			</nav>
+		</div>
+				</div>
+			</div>
+		<div class="medium-4 columns">
+			<nav class="footer-nav__nav">
+				<h4 class="footer-nav__title">Connect</h4>
+				<ul class="inline-list">
+					<li class="footer-nav__item"><span class="fi-social-twitter"></span></li>
+					<li class="footer-nav__item"><span class="fi-social-facebook"></span></li>
+					<li class="footer-nav__item"><span class="fi-social-youtube"></span></li>
+					<li class="footer-nav__item"><span class="fi-social-instagram"></span></li>
+				</ul>
+				<p>Contact us at:</p>
+				<p>contact@naturalbodybuilding.com</p>
+			</nav>
+		</div>
+	</div>
+</section>
+<style>
+	.footer__block {}
+	.footer__logo {
+		display: block;
+		height: 80px;
+		width: 80px;
+		line-height: 80px;
+		font-size: 80px;
+		float: left;
+	}
+	.footer__copyright {}
+	.footer__slogan {}
+</style>
+<section class="block row full-width collapse footer__block dark-color">
+	<div class="site-width">
+		<div class="footer__logo"><span class="fi-web"></span></div>
+		<div class="footer__copyright">
+			<%= t('.copyright', :year => Time.now.year,
+				  :site_name => Refinery::Core.site_name) %>
+		</div>
+		<div class="footer__slogan">Serving the Natural Athlete</div>
+
+	</div>
+</section>

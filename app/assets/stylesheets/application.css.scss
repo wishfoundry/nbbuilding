@@ -1,0 +1,114 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ * require refinery/formatting
+ * require refinery/theme
+ *= require_self
+ * require foundation_and_overrides
+
+ *= require_tree .
+ */
+
+// We use these as default colors throughout
+
+$nbb-primary-color: #ffad00;
+$nbb-primaryb-color: #FFF008;
+$nbb-secondary-color: #005DFF;
+$nbb-tertiary-color: #0DE6FF;
+$nbb-quaternary-color: #5DE80C;
+$nbb-quintiary-color: #E80C11;
+
+$refinery-blue-old: #22a7f2;
+
+.primary-color      { background-color: $nbb-primary-color; color: white;}
+.primary-color-text { color: $nbb-primary-color; }
+
+.dark-color         { background-color: rgba(0, 0, 0, 0.9); color: white;}
+
+
+@import "refinery/formatting";
+@import "refinery/theme";
+
+@import "ng_fnd_animations.css";
+@import "foundation_and_overrides";
+@import 'foundation-icons';
+/* Add imports of custom sass/scss files here */
+
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.top-bar {
+//  height: 55px;
+//  line-height: 55px;
+  letter-spacing: 110%;
+  text-transform: uppercase;
+  .logo {
+    width:80px;
+    left:50%;
+    margin-left:-40px;
+    height:110px;
+    position:absolute;
+    background-color:$nbb-primary-color;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index:100;
+  }
+  .active a:hover { color: black !important; }
+//  .active {
+//    color:white;
+//  }
+//  .top-bar-section {
+//    height: 55px;
+//    line-height: 55px;
+//  }
+}
+//
+//
+//.top-bar-section ul li:not(.has-form) a:not(.button) {
+//  line-height: 55px;
+//  height: 55px;
+//  > i {
+//    line-height: 55px;
+//    height: 55px;
+//  }
+//}
+
+#editor_switch > span,
+#editor_switch  {
+  border:none;
+  $orange: #e7682c;
+
+  & > a {
+    color: white;
+    background: none ;
+    background-color: $orange !important;
+//    background-image: none !important;
+    background-attachment: none;
+    border: none;
+
+    &:hover {
+      background-color: lighten($orange, 10%);
+      border: none;
+    }
+  }
+}
+
+.row.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+.site-width {
+  max-width: 960px !important;
+  margin-left: auto !important;
+  margin-right:auto !important;
+}

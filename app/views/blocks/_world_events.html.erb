@@ -1,0 +1,107 @@
+<!-- worldwide events -->
+<style>
+	.worldwide-events-block {}
+	.worldwide-events-block__title {
+		overflow: auto;
+	}
+	.worldwide-events-block__title h1 {
+		color:white;
+		margin-left:1em;
+	}
+	.worldwide-events-block__map {
+		position: relative;
+		min-height:400px;
+		background: url(assets/world_map.svg) no-repeat center center black;
+		background-size: contain;
+	}
+	.worldwide-events-block__thumbs {
+
+	}
+	.thumb__item {
+		backround-size: contain;
+		/*display: inline-block;*/
+		/*margin:0;*/
+		/*width: 20%;*/
+		position: relative;
+		min-height:120px;
+		border: white solid;
+		border-width: 1px 1px 1px 0;
+		padding:0 !important;
+
+	}
+	.thumb__item:hover .hover-content {
+		display:block;
+	}
+	.hover-content {
+		position: absolute;
+		width:100%;
+		height:100%;
+		display:none;
+		/*line-height: 100%;*/
+		text-align: center;
+		background-color: #ffad00;
+	}
+	.hover-content .content {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 1em;
+	}
+	.vert-center {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	.worldwide-events-block__map .prev,
+	.worldwide-events-block__map .next {
+
+		position: absolute;
+		top:50%;
+		font-size: 4rem;
+		display: inline-block;
+		list-height: 4rem;
+		width: 3rem;
+		height: 4rem;
+		margin-top: -2rem;
+	}
+	.worldwide-events-block__map .prev { left: 3rem;}
+	.worldwide-events-block__map .next { right: 3rem;}
+	.pane-container {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		z-index: 10;
+	}
+	.pane  {
+		min-height: 10rem;
+		display: flex;
+		align-items: stretch;
+	}
+</style>
+<section class="block row full-width collapse worldwide-events-block ">
+	<div class="worldwide-events-block__title primary-color"><h1>Wordlwide Events</h1></div>
+	<div class="worldwide-events-block__map dark-color">
+		<span class="prev"><i class="fa fa-angle-left"></i></span>
+		<span class="next"><i class="fa fa-angle-right"></i></span>
+
+		<div class="site-width pane-container">
+			<pane class="pane">
+				<div></div>
+			</pane>
+		</div>
+	</div>
+	<ul class="thumb__row dark-color large-block-grid-6 medium-block-grid-5 small-block-grid-4">
+		<% (1..6).to_a.to_enum.with_index(1).each do |i| %>
+			<li class="thumb__item <%= 'show-for-medium-up' if i == 5 %><%= 'show-for-large-up' if i > 5 %>">
+				<div class="hover-content">
+					<span class="content vert-center">Ms. Figure</span>
+				</div>
+				<img src="" height="80px"/>
+			</li>
+		<% end %>
+	</ul>
+</section>
+
+
+
+

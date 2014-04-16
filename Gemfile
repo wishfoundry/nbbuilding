@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
+
+
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
@@ -43,15 +46,18 @@ gem 'rolify'
 # gem 'devise'
 # gem 'devise_invitable'
 gem 'foundation-rails'
+gem 'foundation-icons-sass-rails'
 gem 'pg'
 
 
 gem 'simple_form'
 gem 'slim-rails'
 gem 'sass-rails', '~> 4.0.0'
+gem 'compass'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'angularjs-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'

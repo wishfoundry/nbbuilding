@@ -1,0 +1,6 @@
+#page
+  div.row
+    div class="medium-9 medium-push-3 columns"
+      =raw @page.content_for(:body)
+    div class="medium-3 medium-pull-9 columns"
+      =raw @page.content_for(:side_body)

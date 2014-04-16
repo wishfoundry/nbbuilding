@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<%= render "/refinery/html_tag" %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
+  <link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
-
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "vendor/modernizr" %>
-    <%= csrf_meta_tags %>
+	  <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <%= render "/refinery/head" %>
   </head>
+  <body id="<%= canonical_id @page %>">
+    <%= site_bar -%>
+    <!--<div id="page_container">-->
+      <header id="header">
+        <%= render "/refinery/header" -%>
+      </header>
 
-  <body>
-
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
+      <%= yield %>
+      <footer>
+        <%= render "/refinery/footer" -%>
+      </footer>
+    <!--</div>-->
+    <%= render "/refinery/javascripts" %>
   </body>
 </html>

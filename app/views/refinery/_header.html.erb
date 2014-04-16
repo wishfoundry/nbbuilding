@@ -1,0 +1,29 @@
+<nav class="top-bar" data-topbar>
+	<ul class="title-area">
+		<li class="name">
+
+		</li>
+		<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+	</ul>
+
+	<section class="top-bar-section">
+		<div class="logo hide-for-small-only"></div>
+
+		<!-- Right Nav Section -->
+		<ul class="right">
+			<li class="active">
+				<a href="#"><i class="fi-shopping-cart" style="vertical-align: middle; font-size: 2em;"></i> Store</a>
+			</li>
+			<li class="has-dropdown">
+				<a href="#">Members Area</a>
+				<ul class="dropdown">
+					<li><a href="#">link </a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<!-- Left Nav Section -->
+		<%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+
+	</section>
+</nav>
