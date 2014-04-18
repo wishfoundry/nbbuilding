@@ -46,7 +46,34 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+
+.fixed .top-bar {
+  $small-height: 40px;
+  height: $small-height;
+  a {
+    height: $small-height;
+    line-height: $small-height !important;
+  }
+  .has-dropdown > a:after { top: 20px}
+  .logo {
+    height: $small-height;
+    border-radius: 0;
+    left:0;
+    margin-left:0;
+
+  }
+  .top-bar-section {
+    margin-left: 80px;
+
+  }
+}
 .top-bar {
+  -webkit-transition: height 0.5s ease-in-out;
+  -webkit-transition-delay: 0.8s;
+  .top-bar-section {
+    -webkit-transition: margin-left 0.5s ease-in-out;
+    -webkit-transition-delay: 0.8s;
+  }
 //  height: 55px;
 //  line-height: 55px;
   letter-spacing: 110%;
@@ -61,10 +88,12 @@ html {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     z-index:100;
+    -webkit-transition: all 0.4s ease-in-out;
+    -webkit-transition-delay: 0.8s;
   }
   .active a:hover { color: black !important; }
 
-//  
+//
 //  .active {
 //    color:white;
 //  }

@@ -83,7 +83,7 @@ section class="block row full-width collapse olympia-spotlight"
       - for time in ['days', 'minutes', 'hours', 'seconds'] do
         div class=" medium-3 columns"
           div class="countdown__item"
-            span.countdown__number
+            span.countdown__number ng-cloak=""
               | {{ #{time} }}
             br
             span.countdown__description
