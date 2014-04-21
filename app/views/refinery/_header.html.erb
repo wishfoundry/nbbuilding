@@ -13,18 +13,21 @@
 
 
 		<!-- Right Nav Section -->
-		<ul class="right">
-			<li class="active">
-				<a href="#"><i class="fi-shopping-cart"
-							   style="vertical-align: middle; font-size: 2em; margin-bottom: -2px;line-height: 20px;"></i> Store</a>
-			</li>
-			<li class="has-dropdown">
-				<a href="#">Members Area</a>
-				<ul class="dropdown">
-					<li><a href="#">link </a></li>
-				</ul>
-			</li>
-		</ul>
+
+		<!--<ul class="right">-->
+			<!--<li class="active">-->
+				<!--<a href="#">-->
+					<!--<i class="fi-shopping-cart"-->
+						<!--style="vertical-align: middle; font-size: 2em; margin-bottom: -2px;line-height: 20px;"></i> Store</a>-->
+			<!--</li>-->
+			<!--<li class="has-dropdown">-->
+				<!--<a href="#">Members Area</a>-->
+				<!--<ul class="dropdown">-->
+					<!--<li><a href="#">link </a></li>-->
+				<!--</ul>-->
+			<!--</li>-->
+		<!--</ul>-->
+
 
 		<!-- Left Nav Section -->
 		<%= presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
@@ -35,6 +38,8 @@
 
 
 	</section>
-		<div class="logo hide-for-small-only"></div>
+		<div class="logo hide-for-small-only">
+			<div class="spacer"> <p></p></div>
+		</div>
 </nav>
 	</div>
